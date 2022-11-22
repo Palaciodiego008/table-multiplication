@@ -17,7 +17,7 @@ const createFile = async (base = 5, list = false) => {
             console.log('===================='.green);
             console.log(output);
         }
-        
+
         fs.writeFileSync(`./files/table-${base}.txt`, output);
 
         return `table-${base}.txt`;

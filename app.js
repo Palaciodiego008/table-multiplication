@@ -3,8 +3,6 @@ const colors = require('colors');
 
 require('./config/yargs');
 
-
-
 console.clear()
 
 createFile(argv.b, argv.l)
