@@ -1,5 +1,4 @@
 const fs = require('fs');
-const colors = require('./config/yargs');
 
 const createFile = async (base = 5, list = false) => {
 
@@ -8,12 +7,12 @@ const createFile = async (base = 5, list = false) => {
 
     try {
         for (let i = 1; i <= 10; i++) {
-            output += `${base} ${'*'.green} ${i} = ${base * i}\n`;
+            output += `${base} * ${i} = ${base * i}\n`;
         }
 
         if (list) {
-            console.log('===================='.green);
-            console.log('  Table of the:'.green, colors.blue(base));
+            console.log('====================');
+            console.log('  Table of the:', base);
             console.log('===================='.green);
             console.log(output);
         }

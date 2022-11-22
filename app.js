@@ -1,7 +1,11 @@
 const {createFile} = require('./helpers/multiplication');
 const colors = require('colors');
 
+const argv = require('./config/yargs');
+
 require('./config/yargs');
+
+
 
 console.clear()
 
